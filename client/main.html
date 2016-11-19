@@ -1,0 +1,54 @@
+<template name="mainLayout">
+  <div class="container">
+    <head>
+      <title>NYC Trees</title>
+    </head>
+    <h1>NYC Directory Of Approved Tree Species List</h1>
+    {{> Template.dynamic template=top}}
+    <div class="row bottom-spacer">
+      {{> selectorButtons }}
+    </div>
+         <ul id="tree-form-list" class="legend-list">
+           <li><span class="text-info">Rounded Shape Tree = </span> Circle; </li>
+           <li><span class="text-info">Pyramidal Shaped Tree = </span> Triangle; </li>
+           <li><span class="text-info">Upright Tree = </span> Box; </li>
+           <li><span class="text-info">Vase Shaped Tree = </span> Upside Down Triangle;</li>
+         </ul> 
+    <div class="row">
+      {{> Template.dynamic template=treeDisplay}}
+    </div>
+    <footer class="top-spacer">
+      <p><a href="https://data.cityofnewyork.us/Recreation/Directory-Of-Approved-Tree-Species-List/99wq-x9cr">Source: City of New York tree data</a></p>
+      <div id="displayStuff"></div>
+    </footer>
+  </div>
+</template>
+
+
+<template name="header">
+  <h3 id="disp-title" class="lead text-primary">{{ displayTitle }}</h3>
+</template>
+
+
+<template name="selectTreeView">
+  
+</template>
+
+
+<template name="homeTreeDisplay">
+  <p class="lead">{{treeData}}</p>
+  <div id="2d-vis" class="trees-network-disp">
+  </div>
+</template>
+
+
+
+<template name="selectorButtons">
+  <div class="btn-group" role="group" aria-label="...">
+    <button type="button" name="display-all" class="btn btn-primary">All Trees</button>
+    <button type="button" name="display-large" class="btn btn-primary large-tree">Large Trees</button>
+    <button type="button" name="display-medium" class="btn btn-primary medium-tree">Medium Trees</button>
+    <button type="button" name="display-intermediate" class="btn btn-primary intermediate-tree">Intermediate Trees</button>
+    <button type="button" name="display-small" class="btn btn-primary small-tree">Small Trees</button>
+  </div>
+</template>

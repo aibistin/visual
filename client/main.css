@@ -1,0 +1,60 @@
+/* CSS declarations go here */
+
+.trees-network-disp {
+    /* width: 100%; 
+    height: 100%;
+    */
+    border: 1px solid lightgray;
+    /*    color: #AA0000; */
+    background-color: #FFEEFF;
+}
+
+.bottom-spacer {
+    margin-bottom: 20px;
+}
+
+.top-spacer {
+    margin-top: 20px;
+}
+
+.large-tree {
+    background: #228B22;
+}
+
+.medium-tree {
+    background: #00BFFF;
+}
+
+.intermediate-tree {
+    background: red;
+}
+
+.small-tree {
+    background: yellow;
+}
+
+.large-tree-font {
+    color: #228B22;
+}
+
+.medium-tree-font {
+    color: #00BFFF;
+}
+
+.intermediate-tree-font {
+    color: red;
+}
+
+.small-tree-font {
+    color: yellow;
+}
+
+.legend-list{
+    list-style-type: none;
+}
+
+#tree-form-list li {
+    display: inline-block;
+}    
+    
+    
